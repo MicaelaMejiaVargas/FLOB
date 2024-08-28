@@ -1,7 +1,54 @@
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container .parrafo{
+  position: absolute;
+  top: 38%;
+  left: 30%;
+}
+.container .parrafo-doc{
+  position: absolute;
+  top: 32%;
+  left: 16%;
+}
+.container .parrafo-imp{
+  position: absolute;
+  top: 32%;
+  left: 23%;
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 .formulario {
   width: 600px;
   height: 360px;
   background-color: black;
+}
+.card-image{
+	width: 310px;
+	height: 387px;
+	/* box-shadow: 1px 0.8px 2px 2px rgba(0, 0, 0, 0.75); */
+	background: #00000000;
+	border-radius: 20px 20px 20px 20px;
 }
 span{
   background-color: black;
@@ -68,7 +115,12 @@ html {
 body {
   margin: 0;
 }
-
+#destacados{
+  background-color: rgb(240, 237, 237);
+  text-align: center;
+  font-size: 1.5em;
+	font-family:monospace;
+}
 #letrero {
   background-color: rgb(240, 237, 237);
   text-align: center;
