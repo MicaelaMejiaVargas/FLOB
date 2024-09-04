@@ -1,0 +1,19 @@
+Name: WOLFENSTEIN TTF FONT - Regular (Normal)
+
+Inhalt: Wolfenstein Schrift für Texte aller Art 
+
+Die Schrift hat Ähnlickeit zu dem Wort "Wolfenstein" ist aber frei erfunden und gestaltet! 
+Buchstaben wie "f" und "t" sind aus "schreibtechnischen" Gründen leicht geändert.
+
+Author: d3Xter 
+Websites: www.rtcwmap.de, www.rtcw4ever.de, www.et4ever.de, wolfenstein4ever.de
+
+E-Mail: wolfenstein4ever@web.de
+
+Erstellung: 2009, August 
+Programme: CorelDRAW und FontCreator
+Zeit: ca. 56 Stunden
+
+Link: http://www.rtcwmap.de/index.php?option=com_remository&Itemid=73&func=fileinfo&id=1703
+
+Viel Spass bei Schreiben :-)
