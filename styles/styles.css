@@ -73,6 +73,9 @@ span{
   padding: 1rem 1Rem;
   background-color: violet;
 }
+.btn:hover{
+  background-color: rgb(21, 96, 146);
+}
 a{
   text-decoration: none;
   color: rgb(80, 79, 79);
@@ -144,7 +147,18 @@ nav ul li{
 .linea{
   padding: 0 35px 0 35px;
   /* margin-bottom: 5px; */
-  border-right:2px solid rgb(116, 115, 115);
+  border-right:2px solid rgba(116, 115, 115, 0.685);
   
 }
+.b{
+  font-size: 15px;
+}
+.linea1{
+  padding: 0 35px 0 35px;
+  /* margin-bottom: 5px; */
+  border-right:2px solid rgba(116, 115, 115, 0.555);
+  font-size: 5px;
+}
+
+
 /*# sourceMappingURL=Styles.css.map */
