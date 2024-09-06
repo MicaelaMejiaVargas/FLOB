@@ -71,7 +71,7 @@ span{
 }
 .btn {
   padding: 1rem 1Rem;
-  background-color: violet;
+  background-color: rgb(211, 175, 211);
 }
 .btn:hover{
   background-color: rgb(21, 96, 146);
@@ -159,6 +159,12 @@ nav ul li{
   border-right:2px solid rgba(116, 115, 115, 0.555);
   font-size: 5px;
 }
-
-
+@font-face {
+  font-family: "yellowtail";
+  src: url("../styles/Yellowtail-Regular.ttf");
+}
+#letrero{
+  font-family: "yellowtail";
+  font-size: 20px;
+}
 /*# sourceMappingURL=Styles.css.map */
