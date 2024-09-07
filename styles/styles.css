@@ -167,4 +167,10 @@ nav ul li{
   font-family: "yellowtail";
   font-size: 20px;
 }
+.linea1{
+  padding: 0 35px 0 35px;
+  /* margin-bottom: 5px; */
+  border-right:2px solid rgba(116, 115, 115, 0.685);
+  
+}
 /*# sourceMappingURL=Styles.css.map */
