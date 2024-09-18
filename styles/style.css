@@ -1,3 +1,10 @@
 span{
     background-color: black;
   }
+.cartas{
+  background-image: url(../imagenes/img-cartas.png) ;
+  background-size:auto;
+  /* background: url(../imagenes/img-cartas.png) cover; */
+  border-radius: 25px;
+  margin: 25px auto;
+}
