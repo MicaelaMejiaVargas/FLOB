@@ -115,7 +115,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+html body {
   margin: 0;
 }
 #destacados{
