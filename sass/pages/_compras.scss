@@ -1,0 +1,38 @@
+@import "../components/fonts";
+
+$text:  "font";
+
+#card-catalogo{
+    background: linear-gradient(to right, rgb(108, 26, 136), rgb(98, 51, 228));
+    border: none;
+
+    div{
+        h4{
+            color: white;
+            font-size: 35px;
+        }
+    }
+}
+
+.card{
+    margin: 10px;
+}
+
+
+p{
+    color: white;
+    font-size: 25px;
+
+    margin: 0; 
+    border-bottom: 2px solid white;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    background-color: rgba(134, 10, 235, 0.932); /* Fondo blanco semi-transparente */
+    border-radius: 50%; /* Hacerlas redondeadas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajusta el ancho según sea necesario */
+}

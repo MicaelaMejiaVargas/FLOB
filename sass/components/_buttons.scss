@@ -1,0 +1,13 @@
+$fondo: rgb(38, 12, 63);
+
+.btn{
+    background: $fondo;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        color: white;
+        background:  rgb(67, 0, 250);
+        border: none;
+    }
+}

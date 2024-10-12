@@ -1,0 +1,11 @@
+$fondo: rgb(13, 7, 27);
+html{
+    box-sizing: border-box;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    overflow-x: hidden; //ocultará cualquier desbordamiento horizontal.
+    background: $fondo;
+}

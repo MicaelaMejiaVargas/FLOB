@@ -1,0 +1,31 @@
+$link: rgb(113, 133, 197);
+@import "fonts";
+
+.nav-link {
+    position: relative;
+    color: white;
+    font-size: 19px;
+    font-family: 'font';
+
+    &:hover{
+        color: $link;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: $link;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
