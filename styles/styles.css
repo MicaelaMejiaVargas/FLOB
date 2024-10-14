@@ -1,0 +1,544 @@
+body {
+  /* Basic dimensions and centering
+  width: 100%;
+  height: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* Dark mode colors and gradient */
+  background-color: #05071b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+/* .primerCarta{
+  box-shadow:0px 0px 20px #4d6dff;
+} */
+.primeraCarta {
+  /* flex: 0 0 ; */
+  padding: 0px;
+  margin: 0px;
+  background-color: #00DBDE;
+  background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+  position: relative;
+  border-radius: 4px;
+  
+  transition: 0.5s ease;
+  
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+    filter: blur(20px);
+    
+    transition: 0.5s ease;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:hover::after {
+    transform: translateY(10%) scale(0.9);
+  }
+}
+/* .primeraCarta {
+  position: relative;
+}
+.primeraCarta::before {
+  content: "";
+  position: absolute;
+  inset: -5px 18.3%; 
+  transform: translate(0px, 0px); 
+  z-index: -1; 
+  background: linear-gradient(180deg, #4d6dff 0%, #6e8cff 100%);
+  filter: blur(10px);
+} */
+.stardust,
+.cosmic-ring,
+.starfield,
+.nebula {
+  max-height: 70px;
+  max-width: 314px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 12px;
+  filter: blur(3px);
+}
+
+.input {
+  background-color: #05071b;
+  border: none;
+  width: 301px;
+  height: 56px;
+  border-radius: 10px;
+  color: #a9c7ff;
+  padding-inline: 59px;
+  font-size: 18px;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input::placeholder {
+  color: #6e8cff;
+}
+
+.input:focus {
+  outline: none;
+}
+
+#main:focus-within > #input-mask {
+  display: none;
+}
+
+#input-mask {
+  pointer-events: none;
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #05071b);
+  top: 18px;
+  left: 70px;
+}
+
+#cosmic-glow {
+  pointer-events: none;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  background: #4d6dff;
+  top: 10px;
+  left: 5px;
+  filter: blur(20px);
+  opacity: 0.8;
+  transition: all 2s;
+}
+
+#main:hover > #cosmic-glow {
+  opacity: 0;
+}
+
+.stardust {
+  max-height: 63px;
+  max-width: 307px;
+  border-radius: 10px;
+  filter: blur(2px);
+}
+
+.stardust::before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(83deg);
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  filter: brightness(1.4);
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    #4d6dff,
+    rgba(0, 0, 0, 0) 8%,
+    rgba(0, 0, 0, 0) 50%,
+    #6e8cff,
+    rgba(0, 0, 0, 0) 58%
+  );
+  transition: all 2s;
+}
+
+.cosmic-ring {
+  max-height: 59px;
+  max-width: 303px;
+  border-radius: 11px;
+  filter: blur(0.5px);
+}
+
+.cosmic-ring::before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(70deg);
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  filter: brightness(1.3);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    #05071b,
+    #4d6dff 5%,
+    #05071b 14%,
+    #05071b 50%,
+    #6e8cff 60%,
+    #05071b 64%
+  );
+  transition: all 2s;
+}
+
+.starfield {
+  max-height: 65px;
+  max-width: 312px;
+}
+
+.starfield::before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(82deg);
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #1c2452,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 50%,
+    #2a3875,
+    rgba(0, 0, 0, 0) 60%
+  );
+  transition: all 2s;
+}
+
+#search-container:hover > .starfield::before {
+  transform: translate(-50%, -50%) rotate(-98deg);
+}
+
+#search-container:hover > .nebula::before {
+  transform: translate(-50%, -50%) rotate(-120deg);
+}
+
+#search-container:hover > .stardust::before {
+  transform: translate(-50%, -50%) rotate(-97deg);
+}
+
+#search-container:hover > .cosmic-ring::before {
+  transform: translate(-50%, -50%) rotate(-110deg);
+}
+
+#search-container:focus-within > .starfield::before {
+  transform: translate(-50%, -50%) rotate(442deg);
+  transition: all 4s;
+}
+
+#search-container:focus-within > .nebula::before {
+  transform: translate(-50%, -50%) rotate(420deg);
+  transition: all 4s;
+}
+
+#search-container:focus-within > .stardust::before {
+  transform: translate(-50%, -50%) rotate(443deg);
+  transition: all 4s;
+}
+
+#search-container:focus-within > .cosmic-ring::before {
+  transform: translate(-50%, -50%) rotate(430deg);
+  transition: all 4s;
+}
+
+.nebula {
+  overflow: hidden;
+  filter: blur(30px);
+  opacity: 0.4;
+  max-height: 130px;
+  max-width: 354px;
+}
+
+.nebula:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  position: absolute;
+  width: 999px;
+  height: 999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    #000,
+    #4d6dff 5%,
+    #000 38%,
+    #000 50%,
+    #6e8cff 60%,
+    #000 87%
+  );
+  transition: all 2s;
+}
+
+#wormhole-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  max-height: 40px;
+  max-width: 38px;
+  height: 100%;
+  width: 100%;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #1c2452, #05071b, #2a3875);
+  border: 1px solid transparent;
+}
+
+.wormhole-border {
+  height: 42px;
+  width: 40px;
+  position: absolute;
+  overflow: hidden;
+  top: 7px;
+  right: 7px;
+  border-radius: 10px;
+}
+
+.wormhole-border::before {
+  content: "";
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  filter: brightness(1.35);
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #4d6dff,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 50%,
+    #6e8cff,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+#main {
+  position: relative;
+}
+
+#search-icon {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(450deg);
+  }
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container .parrafo{
+  position: absolute;
+  top: 38%;
+  left: 30%;
+}
+.container .parrafo-doc{
+  position: absolute;
+  top: 32%;
+  left: 16%;
+}
+.container .parrafo-imp{
+  position: absolute;
+  top: 32%;
+  left: 23%;
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.formulario {
+  width: 600px;
+  height: 360px;
+  background-color: black;
+}
+.card-image{
+	width: 310px;
+	height: 387px;
+	/* box-shadow: 1px 0.8px 2px 2px rgba(0, 0, 0, 0.75); */
+	background: #00000000;
+	border-radius: 20px 20px 20px 20px;
+}
+span{
+  background-color: black;
+}
+.formulario__input {
+  width: 100%;
+  background-color: black;
+}
+@media screen and (min-width: 1200px) {
+  .formulario__input {
+    width: 50%;
+    background-color: aqua;
+  }
+}
+.formulario__btn {
+  background-color: pink;
+}
+.linea:nth-last-child(-n + 1) {
+  border-right: none;
+}
+.btn {
+  padding: 1rem 1Rem;
+  background-color: rgb(211, 175, 211);
+}
+.btn:hover{
+  background-color: rgb(21, 96, 146);
+}
+a{
+  text-decoration: none;
+  color: rgb(80, 79, 79);
+}
+.cuadrado {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 31px;
+  background: linear-gradient(180deg, rgb(248, 160, 219) 0%, rgba(62, 106, 250, 0.733) 100%);
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-style: solid;
+}
+/* 
+footer {
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 2px;
+  width: fit-content;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+} */
+
+/* .data1 {
+  text-align: center;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html body {
+  margin: 0;
+}
+#destacados{
+  background-color: rgb(240, 237, 237);
+  text-align: center;
+  font-size: 1.5em;
+	font-family:monospace;
+}
+#letrero {
+  background-color: rgb(240, 237, 237);
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+.buscar{
+  border-radius: 15px;
+}
+nav ul{
+  margin: 2em 8em 3em;
+  list-style: none;
+  text-align:center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul li{
+  display: inline-block;
+  /* margin:0 auto 0 auto; */
+}
+.linea{
+  padding: 0 35px 0 35px;
+  /* margin-bottom: 5px; */
+  border-right:2px solid rgba(116, 115, 115, 0.685);
+  
+}
+.b{
+  font-size: 15px;
+}
+.linea1{
+  padding: 0 35px 0 35px;
+  /* margin-bottom: 5px; */
+  border-right:2px solid rgba(116, 115, 115, 0.555);
+  font-size: 5px;
+}
+@font-face {
+  font-family: "yellowtail";
+  src: url("../styles/Yellowtail-Regular.ttf");
+}
+#letrero{
+  font-family: "yellowtail";
+  font-size: 20px;
+}
+@font-face {
+  font-family: "catalogo";
+  src: url("../styles/Sulphur_Point/SulphurPoint-Light.ttf");
+}
+.catalogo{
+  font-size: 30px;
+  font-family: "catalogo";
+}
+/*# sourceMappingURL=Styles.css.map */

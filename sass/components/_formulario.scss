@@ -1,0 +1,24 @@
+$color-central: black;
+
+@mixin mq-desktop{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
+
+.formulario{
+    width: 600px;
+    height: 360px;
+    background-color: $color-central;
+    &__input{
+        width: 100%;
+        background-color: black;
+        @include mq-desktop(){
+            width: 50%;
+            background-color: aqua;
+        }
+    }
+    &__btn{
+        background-color: pink;
+    }
+}
