@@ -41,8 +41,8 @@
   
 #search-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-start;
+  justify-content: end;
 }
   
 #main:focus-within > #input-mask {

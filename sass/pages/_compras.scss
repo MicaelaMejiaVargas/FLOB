@@ -3,23 +3,35 @@
 $text:  "font";
 
 #card-catalogo{
-    background: linear-gradient(to right, rgb(108, 26, 136), rgb(98, 51, 228));
+    margin: 90px;
+    background: linear-gradient(to right, rgb(111, 238, 255), rgb(103, 21, 150), rgb(255, 123, 255));
     border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(88, 74, 148, 0.4);
 
     div{
+        
         h4{
             color: white;
             font-size: 35px;
         }
+
+    }
+    
+}
+
+.card{   
+
+    margin-top: 15px;
+
+    img{
+        border-radius: 10px;
     }
 }
 
-.card{
-    margin: 10px;
-}
 
-
-p{
+.subs{
     color: white;
     font-size: 25px;
 
@@ -28,11 +40,11 @@ p{
 }
 
 .carousel-control-prev-icon,.carousel-control-next-icon {
-    background-color: rgba(134, 10, 235, 0.932); /* Fondo blanco semi-transparente */
-    border-radius: 50%; /* Hacerlas redondeadas */
+    background-color: rgb(134, 10, 235); 
+    border-radius: 10%; 
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Ajusta el ancho según sea necesario */
+    width: 5%; 
 }

@@ -1,9 +1,16 @@
+/* BASE */
 @import "base";
 
-//Components
+/* GRID SYSTEM */
+@import "./grid/mixins";
+
+/* COMPONENTS */
 @import "./components/input";
 @import "./components/nav";
 @import "./components/buttons";
+@import "./components/letrero";
+@import "./components/footer";
 
-//Pages
+/* PAGES */
 @import "./pages/compras";
+@import "./pages/quienessomos"

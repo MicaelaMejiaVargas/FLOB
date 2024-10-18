@@ -1,0 +1,88 @@
+/**
+* BREAKPOINT MIXINGS
+*/
+
+/**
+* SMALL (XS)
+*/
+ 
+@mixin xs {
+    @media (max-width: #{$screen-xs-max}) {
+        @content;
+    }
+}
+
+/**
+* SMALL (SM)
+*/
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+/**
+* MEDIUM (MD)
+*/
+
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+/**
+* LARGE (LG)
+*/
+
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+@mixin gridGenerator($breakpoint, $offset: false, $ordering: false, $hidding: false) {
+    /*------------------------------------*\
+    # COLUMNS
+    \*------------------------------------*/
+    @for $column from 1 to $columns-number+1 {
+        .col-#{$breakpoint}-#{$column} {
+            // flex-basis: percentage($column / $columns-number);
+            width: (100% * $column) / $columns-number;
+        }
+    }
+
+    /*------------------------------------*\
+    # OFFSET COLUMNS
+    \*------------------------------------*/
+    @if $offset {
+        @for $column from 1 to $columns-number+1 {
+            .col-#{$breakpoint}-offset-#{$column} {
+                margin-left: (100% * $column) / $columns-number;
+            }
+        }
+    }
+
+    /*------------------------------------*\
+    # ORDERING
+    \*------------------------------------*/
+    @if $ordering {
+        .col-#{$breakpoint}-first {
+            order: -1;
+        }
+        
+        .col-#{$breakpoint}-last {
+            order: 1;
+        }
+    }
+
+    /*------------------------------------*\
+    # HIDDING ELEMENTS
+    \*------------------------------------*/
+    @if $hidding {
+        .#{$breakpoint}-hide {
+            display: none;
+        }
+    }
+}

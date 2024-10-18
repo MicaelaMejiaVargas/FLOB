@@ -1,0 +1,28 @@
+@import "../components/fonts";
+
+h1{
+    color: white;
+    font-family: "font";
+    cursor: default;
+    transition: all 400ms ease-out;
+
+    &:hover{
+        transform: translateY(-3%);
+        color: rgb(209, 11, 209);
+    }
+}
+
+h2{
+    color: rgb(218, 17, 218);
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.texto-quienessomos{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    z-index: 100;
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* BASE */
 html {
   box-sizing: border-box;
 }
@@ -12,6 +13,23 @@ body {
   background: rgb(13, 7, 27);
 }
 
+/* GRID SYSTEM */
+/**
+* BREAKPOINT MIXINGS
+*/
+/**
+* SMALL (XS)
+*/
+/**
+* SMALL (SM)
+*/
+/**
+* MEDIUM (MD)
+*/
+/**
+* LARGE (LG)
+*/
+/* COMPONENTS */
 @keyframes twinkle {
   0%, 100% {
     opacity: 0.5;
@@ -51,8 +69,8 @@ body {
 
 #search-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: end;
 }
 
 #main:focus-within > #input-mask {
@@ -272,7 +290,11 @@ body {
 }
 @font-face {
   font-family: "font";
-  src: url("/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+  src: url("/fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "diseño mejor";
+  src: url("/fonts/Yellowtail/Yellowtail-Regular.ttf");
 }
 .nav-link {
   position: relative;
@@ -301,7 +323,7 @@ body {
 }
 
 .btn {
-  background: rgb(38, 12, 63);
+  background: rgb(44, 17, 87);
   color: white;
   text-decoration: none;
 }
@@ -313,11 +335,45 @@ body {
 
 @font-face {
   font-family: "font";
-  src: url("/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+  src: url("/fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "diseño mejor";
+  src: url("/fonts/Yellowtail/Yellowtail-Regular.ttf");
+}
+aside {
+  background: linear-gradient(to right, rgba(23, 107, 146, 0.37), rgba(98, 0, 163, 0.342), rgba(221, 138, 196, 0.267));
+}
+aside #letrero {
+  margin-top: 70px;
+  font-family: "diseño mejor";
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  color: rgb(209, 203, 203);
+  font-size: 16px;
+  text-align: center;
+}
+
+/* PAGES */
+@font-face {
+  font-family: "font";
+  src: url("/fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "diseño mejor";
+  src: url("/fonts/Yellowtail/Yellowtail-Regular.ttf");
 }
 #card-catalogo {
-  background: linear-gradient(to right, rgb(108, 26, 136), rgb(98, 51, 228));
+  margin: 90px;
+  background: linear-gradient(to right, rgb(111, 238, 255), rgb(103, 21, 150), rgb(255, 123, 255));
   border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(88, 74, 148, 0.4);
 }
 #card-catalogo div h4 {
   color: white;
@@ -325,10 +381,13 @@ body {
 }
 
 .card {
-  margin: 10px;
+  margin-top: 15px;
+}
+.card img {
+  border-radius: 10px;
 }
 
-p {
+.subs {
   color: white;
   font-size: 25px;
   margin: 0;
@@ -336,13 +395,47 @@ p {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgba(134, 10, 235, 0.932); /* Fondo blanco semi-transparente */
-  border-radius: 50%; /* Hacerlas redondeadas */
+  background-color: rgb(134, 10, 235);
+  border-radius: 10%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%; /* Ajusta el ancho según sea necesario */
+  width: 5%;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("/fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "diseño mejor";
+  src: url("/fonts/Yellowtail/Yellowtail-Regular.ttf");
+}
+h1 {
+  color: white;
+  font-family: "font";
+  cursor: default;
+  transition: all 400ms ease-out;
+}
+h1:hover {
+  transform: translateY(-3%);
+  color: rgb(209, 11, 209);
+}
+
+h2 {
+  color: rgb(218, 17, 218);
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.texto-quienessomos {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  z-index: 100;
 }
 
 /*# sourceMappingURL=main.css.map */
